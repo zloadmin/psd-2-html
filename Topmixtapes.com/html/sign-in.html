@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Главная страница</title>
+<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/fonts.css" type="text/css">
+<!--Main Scripts-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!--//Main Scripts-->
+
+<link type="text/css" rel="stylesheet" href="css/rhinoslider-1.05.css" />
+<script type="text/javascript" src="js/rhinoslider-1.05.min.js"></script>
+<script type="text/javascript" src="js/mousewheel.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#slideshow').rhinoslider({
+		controlsMousewheel: false,
+		controlsPlayPause: false,
+		autoPlay: true,
+		pauseOnHover: false,
+		showBullets: 'never',
+		showControls: 'always'
+	});
+});
+</script>
+
+<script src="js/jquery.plugin.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script>
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+	$('#defaultCountdown').countdown({until: austDay, padZeroes: true});
+	$('#year').text(austDay.getFullYear());
+});
+</script>
+
+<!--[if IE]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+<![endif]--> 
+</head>
+<body>
+	<header id="header">
+    	<nav id="nav">
+        	<ul>
+            	<li class="logo">
+                	<a href="#" title=""><img src="images/logo.png" alt=""></a>
+                </li><!--
+            	--><li>
+                	<a href="#" title="">MIXTAPES</a>
+                    <div>
+                    	<ul>
+                        	<li><a href="#" title="">Most Recent</a></li>
+                        	<li><a href="#" title="">Upcoming</a></li>
+                        </ul>
+                    </div>
+                </li><!--
+            	--><li>
+                	<a href="#" title="">ARTISTS</a>
+                </li><!--
+            	--><li>
+                	<a href="#" title="">ADVERTISE</a>
+                </li><!--
+            	--><li>
+                	<a href="#" title="">CONTACT US</a>
+                </li><!--
+            	--><li class="search">
+                	<input type="text" name="search"><button></button>
+                </li><!--
+            	--><li class="sign_in">
+                	<a href="#" title=""><img src="images/profile_photo.png" alt="">Mike Smith</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section">
+    	<div class="registration sign_in">
+        	<p>Sign in</p>
+            <form method="post">
+            	<label><img src="images/icon1-1.png" alt=""><input type="text" name="name" required placeholder="Username"></label>
+            	<label><img src="images/icon1-3.png" alt=""><input type="password" name="password" required placeholder="Password"><span>Forgot?</span></label>
+                <label for="che1" class="checkbox"><input type="checkbox" name="che1" id="che1" value="che1">Remember me</label>
+                <button>submit</button>
+            </form>
+        </div>
+    </section>
+    <footer id="footer">
+    	<div class="social">
+        	<ul>
+            	<li class="tw"><a href="" title=""></a></li>
+            	<li class="pw"><a href="" title=""></a></li>
+            	<li class="fb"><a href="" title=""></a></li>
+            	<li class="gl"><a href="" title=""></a></li>
+            </ul>
+            <a href="" title="">Terms and Conditions|</a>
+            <a href="" title="">|Privacy Policy|</a>
+            <a href="" title="">|DMCA|</a>
+        </div>
+    </footer>
+</body>
+</html>
