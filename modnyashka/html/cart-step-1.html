@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>-->
+    <script src="js/jquery.easing-1.3.js"></script>
+    <script src="js/jquery.mousewheel-3.1.12.js"></script>
+    <script src="js/jquery.jcarousellite.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="girl"></div>
+            <div class="userpanel">
+                <nav>
+                    <ul>
+                        <li><a href="#singlup">Вход</a></li>
+                        <li><a href="#loginup">Регистрация</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="searchpanel">
+                <form action="">
+                    <input type="search" placeholder="найти на сайте">
+                    <button type="submit"></button>
+                </form>
+            </div>
+            <div class="callpanel">
+                <div class="call"><p>звоните:</p></div>
+                <div class="number"><span>+7(123)</span>123 45 67</div>
+            </div>
+            <div class="cart">
+                <p>В корзине 10 товаров <br><a href="#">открыть</a></p>
+            </div>
+            <menu>
+                <ul>
+                    <li><a href="#">ЖЕНСКАЯ ОДЕЖДА</a></li>
+                    <li><a href="#">МУЖСКАЯ ОДЕЖДА</a></li>
+                    <li><a href="#">ДЕТСКАЯ ОДЕЖДА</a></li>
+                    <li><a href="#">АКСЕССУАРЫ</a></li>
+                    <li><a href="#">АКЦИИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </menu>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+        	<article>
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#" title="">Главная</a></li>
+                        <li><a href="#" title="">Женская одежда</a></li>
+                        <li>Джемперы и кардиганы</li>
+                    </ul>
+                </div>
+            </article>
+			<div class="register product_page cart_page">
+            	<div class="steps cart_steps">
+                	<ul>
+                    	<li class="current_pos"><span>01</span> Резюме</li>
+                    	<li><span>02</span> Войти</li>
+                    	<li><span>03</span> Адрес</li>
+                    	<li><span>04</span> Доставка</li>
+                    	<li><span>05</span> Оплата</li>
+                    </ul>
+                </div>
+				<h1 class="headicon hicon_about cart_container_h1">РЕЗЮМЕ ПОКУПОК</h1>
+                <div class="cart_container">
+                    <ul class="cart_step_1_ul">
+                    	<li class="caption">
+                        	<p class="caption_cart_img">Продукт</p>
+                            <p class="caption_cart_description">Описание</p>
+                            <p class="caption_cart_code">Код</p>
+                            <p class="caption_cart_price">Цена за единицу</p>
+                            <p class="caption_cart_amount">Количество</p>
+                            <p class="caption_cart_summ">Вместе</p>
+                        </li>
+                    	<li>
+                        	<div class="cart_img">
+                            	<img src="img/cart_img.png" alt="">
+                            </div>
+                            <div class="cart_description">
+                                <h1>Джемпер Brave Soul</h1>
+                                <p>Размер S</p>
+                                <div class="cart_code">&mdash;</div>
+                                <p class="price price_1">7 600 <span>руб.</span></p>
+                                <div class="count_cart count_cart_1">
+                                    <a href="#" class="prev_count" title=""></a>
+                                    <input class="counter" type="text" name="count" value="1" readonly>
+                                    <a href="#" class="next_count" title=""></a>
+                                </div>
+                                <p class="price price_2">7 600 <span>руб.</span></p>
+                                <a href="#" class="cart_close cart_close_1" title=""></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="cart_payment">
+                    	<div>
+                        	<p>Доступные формы оплаты: <a href="#" title="">Наличными,  банковский перевод, PayPal</a></p>
+                        	<p>Доступные формы: <a href="#" title="">Курьер и Почта Польша</a></p>
+                        </div>
+                        <table>
+                        	<tr>
+                            	<td>Сумма продуктов (брутто)</td>
+                            	<td><span>7 600</span> руб.</td>
+                            </tr>
+                        	<tr>
+                            	<td>Сумма доставки (брутто)</td>
+                            	<td><span>7 600</span> руб.</td>
+                            </tr>
+                        	<tr>
+                            	<td>Всего:</td>
+                            	<td><span>7 600</span> руб.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="points">
+					<p class="avalible">Планируемые наличие: <a href="#" title="">Даже сегодня</a></p>
+                    <label class="discount">СКИДКА ВАУЧЕРЫ <input type="text" name="discount"></label>
+                    <a class="discount_how" href="#" title="">Как получить код скидки?</a>
+                    <p class="points_amount">При оплате этой корзине вы можете получить до <span>17</span> бонусных баллов...</p>
+                </div>
+                <table class="address_full">
+                	<tr class="address_full_caption">
+                    	<td>АДРЕС ДОСТАВКИ (КЛИЕНТКА ОРЕНБУРГ)</td>
+                        <td>ПЛАТЕЖНЫЙ АДРЕС  (КЛИЕНТКА ОРЕНБУРГ)</td>
+                    </tr>
+                	<tr>
+                    	<td>Виктория Коваленко</td>
+                        <td>Виктория Коваленко</td>
+                    </tr>
+                	<tr>
+                    	<td>Оренбург, п.Куйбышева</td>
+                        <td>Оренбург, п.Куйбышева</td>
+                    </tr>
+                	<tr>
+                    	<td>ул. Тепличная, д. 12</td>
+                        <td>ул. Тепличная, д. 12</td>
+                    </tr>
+                	<tr>
+                    	<td>460041 Оренбург, п.Куйбышева</td>
+                        <td>460041 Оренбург, п.Куйбышева</td>
+                    </tr>
+                	<tr>
+                    	<td>Россия</td>
+                        <td>Россия</td>
+                    </tr>
+                	<tr>
+                    	<td>89284550860</td>
+                        <td>89284550860</td>
+                    </tr>
+                	<tr>
+                    	<td>89284550860</td>
+                        <td>89284550860</td>
+                    </tr>
+                </table>
+                <div class="cart_resume">
+                	<form method="post">
+                    	<a href="#" class="go_back">ПРОДОЛЖИТЬ ПОКУПКИ <img src="img/1.png" alt=""></a>
+                        <button>ПЕРЕЙТИ К ПОРЯДКУ <img src="img/1.png" alt=""></button>
+                    </form>
+                </div>
+			</div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <menu>
+                <ul>
+                    <li><a href="#">ЖЕНСКАЯ ОДЕЖДА</a></li>
+                    <li><a href="#">МУЖСКАЯ ОДЕЖДА</a></li>
+                    <li><a href="#">ДЕТСКАЯ ОДЕЖДА</a></li>
+                    <li><a href="#">АКСЕССУАРЫ</a></li>
+                    <li><a href="#">АКЦИИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                </ul>
+            </menu>
+            <div class="copyright">
+                <p>Copyright 2015 <br />Все права защищены</p>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="img/socicon_vk.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/socicon_fb.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/socicon_tw.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/socicon_gp.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="phone">
+                <p><span>+7(123)</span><br>123 45 67</p>
+            </div>
+            <div class="email">
+                <a href="mailto:mail@mail.com">mail@mail.com</a>
+            </div>
+        </div>
+    </footer>
+    <div class="fade">
+    </div>
+    <div class="popup">
+    	<div class="close"></div>
+    	<form method="post">
+        	<p>ВХОД</p>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><img src="img/socicon_vk.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/socicon_fb.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/socicon_tw.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/socicon_gp.png" alt=""></a></li>
+                </ul>
+            </div>
+            <label>Email<input type="email" name="email"></label>
+            <label>Пароль<input type="password" name="pass"></label>
+            <button>ВОЙТИ <img src="img/1.png" alt=""></button><a href="#" title="">Забыли пароль?</a><a href="#" title="">Регистрация</a>
+        </form>
+    </div>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        $(function() {
+            $(".slower .carousel").jCarouselLite({
+                btnNext: ".slower .next",
+                btnPrev: ".slower .prev",
+                speed: 800
+            });
+			
+			$('.prev_count').click(function(e) {
+				if($('> .counter', $(this).parent('div')).val() > 0)
+				{
+                	$('> .counter', $(this).parent('div')).val($('> .counter', $(this).parent('div')).val() - 1);
+				}
+				return false;
+            });
+			
+			$('.next_count').click(function(e) {
+				$('> .counter', $(this).parent('div')).val(parseInt($('> .counter', $(this).parent('div')).val()) + 1);
+				return false;
+            });
+			
+			$('.payment_page li').click(function(e) {
+                $('.payment_page li').removeClass('selected');
+				$(this).addClass('selected');
+				return false;
+            });
+			
+			$('.popup .close').click(function(e) {
+                $('.fade').fadeOut('slow');
+				$('.popup').fadeOut('fast');
+            });
+			
+			$('.fade').click(function(e) {
+                $('.fade').fadeOut('slow');
+				$('.popup').fadeOut('fast');
+            });
+			
+			$('.userpanel li:first').click(function(e) {
+                $('.fade').fadeIn('slow');
+				$('.popup').fadeIn('fast');
+				return false;
+            });
+			
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+        });
+    </script>
+</body>
+</html>
