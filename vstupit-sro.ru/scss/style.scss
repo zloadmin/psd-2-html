@@ -1,0 +1,349 @@
+@import 'base';
+
+body {
+	margin: 0;
+}
+
+.header {
+	min-width: 1000px;
+	&-container {
+		margin: 0 auto;
+		width: 835px;
+		padding: 5px 0;
+		overflow: hidden;
+		background-image: url("../img/header-top-bg.png");
+		background-repeat: no-repeat;
+		background-position: 170px 15px;
+	}
+	&-logo {
+		float: left;
+		width: 135px;
+		text-align: center;
+		img {
+			vertical-align: middle;
+		}
+		p {
+			margin: 0;
+			text-transform: uppercase;
+			font: normal 13.5px $cb;
+		}
+	}
+	&-title {
+		float: left;
+		width: 420px;
+		h2 {
+			margin: 0;
+			text-align: center;
+			text-transform: uppercase;
+			font: normal 45px $cb;
+			color: $accent;
+		}
+	}
+	&-info {
+		float: right;
+		margin-top: 10px;
+		text-align: right;
+		width: 835px - 135 - 420;
+		p {
+			margin: 0;
+			font: normal 15px $cb;
+		}
+		h4 {
+			margin: 5px 0 0;
+			font: normal 34px $cb;
+			color: $accent;
+			img {
+				position: relative;
+				top: 5px;
+				right: 5px;
+			}
+		}
+		h5 {
+			margin: 0;
+			font: normal 19px $cb;
+		}
+	}
+	&-bottom {
+		&-container {
+			margin: 0 auto;
+			width: 835px;
+		}
+		min-width: 1000px;
+		text-align: center;
+		background-color: #31558f;
+		p {
+			margin: 0;
+			padding: 12px 0;
+			font: normal 25px $cb;
+			color: #fff;
+		}
+	}
+	&-line {
+		min-width: 1000px;
+		height: 4px;
+		background-color: #7295c9;
+	}
+	&-menu {
+		&-container {
+			margin: 0 auto;
+			width: 1000px;
+		}
+		min-width: 1000px;
+		background-color: #9fc32e;
+		border-top: 1px solid #d4e548;
+		ul {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			li {
+				position: relative;
+				display: inline-block;
+				margin: 4px 4px 6px;
+				font: normal 15px $cr;
+				&:after {
+					position: absolute;
+					right: -10px;
+					content: '|';
+					font: normal 15px $cr;
+					color: #fff;
+				}
+				&:last-child {
+					&:after {
+						display: none;
+					}
+				}
+				a {
+					text-decoration: none;
+					color: #fff;
+					transition: all .3s;
+					text-shadow: 0 1px 0 rgba(#627a25, .79);
+					&.blue {
+						color: #013280;
+					}
+					&:hover {
+						color: $accent;
+					}
+				}
+			}
+		}
+	}
+}
+
+.hiro {
+	position: relative;
+	height: 500px;
+	background-image: url("../img/header-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+	min-width: 1000px;
+	&-content {
+		margin: 0 auto;
+		width: 835px;
+		img {
+			margin-top: 22px;
+			margin-left: 45px;
+			vertical-align: middle;
+		}
+		form {
+			position: relative;
+			float: right;
+			margin-top: 35px;
+			margin-right: 20px;
+			width: 411px;
+			height: 419px;
+			text-align: center;
+			background-image: url("../img/form-bg.png");
+			background-repeat: no-repeat;
+			background-position: center;
+			p {
+				margin: 25px 0 15px;
+				text-transform: uppercase;;
+				font: normal 22px $cb;
+				color: #fff;
+			}
+			input {
+				margin-bottom: 20px;
+				width: 390px - (17 * 2) - 65;
+				height: 50px;
+				padding-right: 15px;
+				padding-left: 50px;
+				font: normal 22px $cr;
+				color: #333;
+				border: none;
+				outline: none;
+				background-image: url("../img/icon-user.png");
+				background-repeat: no-repeat;
+				background-position: center left;
+				&:last-child {
+					background-image: url("../img/icon-phone.png");
+				}
+			}
+			::-webkit-input-placeholder {color:#716f69;}
+			::-moz-placeholder          {color:#716f69;}
+			:-moz-placeholder           {color:#716f69;}
+			:-ms-input-placeholder      {color:#716f69;}
+			.button-wrap {
+				margin-top: 6px;
+				margin-right: auto;
+				margin-left: auto;
+				width: 244px;
+				height: 85px;
+				background-image: url("../img/btn-form-send-bg.png");
+			}
+			button {
+				display: block;
+				width: 100%;
+				height: 55px;
+				padding-top: 15px;
+				font: normal 22px $cb;
+				color: #fff;
+				background: none;
+				border: none;
+				outline: none;
+				cursor: pointer;
+			}
+			.security {
+				position: absolute;
+				right: 0;
+				bottom: 11px;
+				left: 0;
+				margin: 0 auto;
+				width: 317px;
+				height: 47px;
+				font: normal 15.5px/47px $cb;
+				color: #fff;
+				background-image: url("../img/security-bg.png")
+			}
+		}
+	}
+	&-line {
+		position: absolute;
+		bottom: 0;
+		float: left;
+		width: 51%;
+		height: 27px;
+		background-image: url("../img/hiro-line.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top right;
+	}
+}
+
+.sro {
+	min-width: 1000px;
+	padding-bottom: 50px;
+	background-image: url("../img/sro-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	color: #1c1c1c;
+	&-container {
+		margin: 0 auto;
+		width: 860px;
+	}
+	p {
+		margin: 20px 0;
+		font: normal 17px $cr;
+	}
+	ul {
+		li {
+			font: normal 17px $cb;
+		}
+	}
+	a.btn-red {
+		display: block;
+		margin: 0 auto;
+		width: 260px;
+		height: 55px;
+		text-align: center;
+		text-decoration: none;
+		font: normal 18.5px/55px $cb;
+		color: #fff;
+		text-shadow: 0 2px 3px rgba(#000, .52);
+		background-image: url("../img/btn-red.png");
+	}
+}
+
+.building {
+	margin-top: -40px;
+	min-width: 1000px;
+	padding-bottom: 80px;
+	background-image: url("../img/building-bg.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	&-container {
+		margin: 0 auto;
+		width: 860px;
+	}
+	ul {
+		display: inline-block;
+		margin-bottom: 40px;
+		li {
+			padding-left: 20px;
+			font: normal 29px $cb;
+			&:before {
+				margin-top: 15px;
+			}
+		}
+	}
+	img {
+		float: right;
+		display: inline-block;
+		margin-top: -45px;
+		&.building-2 {
+			margin-top: 0;
+		}
+	}
+}
+
+.text {
+	margin-top: -70px;
+	min-width: 1000px;
+	padding-bottom: 20px;
+	background-image: url("../img/text-bg.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+	&-container {
+		margin: 0 auto;
+		width: 860px;
+	}
+	p {
+		font: normal 17px $cr;
+	}
+	.summ {
+		margin: 70px auto 0;
+		width: 478px;
+		height: 181px;
+		text-align: center;
+		background-image: url("../img/summ-bg.png");
+		a {
+			display: inline-block;
+			margin: 55px auto;
+			width: 426px;
+			height: 85px;
+			text-decoration: none;
+			font: normal 27px/75px $cb;
+			color: #fff;
+			background-image: url("../img/btn-summ.png");
+		}
+	}
+}
+
+.footer {
+	min-width: 1000px;
+	padding: 20px 0 1px;
+	text-align: center;
+	background-color: #31558f;
+	h4 {
+		margin: 0 0 10px;
+		font: normal 24px $cb;
+		color: #fff;
+	}
+	p {
+		margin: 0 0 10px;
+		font: normal 20px $cr;
+		color: #fff;
+	}
+}
+
+@import 'media';
