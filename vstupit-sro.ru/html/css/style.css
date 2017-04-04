@@ -273,11 +273,10 @@ body {
 .header-menu ul li.mega ul:after {
   position: absolute;
   z-index: -1;
-  bottom: 0;
+  top: 15px;
   left: 0;
   width: 100%;
-  height: -webkit-calc(100% - 15px);
-  height: calc(100% - 15px);
+  height: 86%;
   content: '';
   background-color: #9fc32e;
   -webkit-border-radius: 5px;
@@ -734,6 +733,9 @@ body {
   text-decoration: none;
   font: normal 27px/75px "Calibri Bold", sans-serif;
   color: #fff;
+  background: none;
+  border: none;
+  outline: none;
   background-color: #9fc32e;
   -webkit-border-radius: 2px;
           border-radius: 2px;
@@ -800,10 +802,16 @@ body {
 }
 
 .footer {
+  display: block;
   min-width: 1000px;
   padding: 20px 0 1px;
   text-align: center;
   background-color: #31558f;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 860px;
 }
 
 .footer h4 {
