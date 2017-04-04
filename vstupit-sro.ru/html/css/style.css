@@ -723,7 +723,7 @@ body {
   background-color: #30558f;
 }
 
-.text .summ a {
+.text .summ a.btn-green {
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -743,7 +743,7 @@ body {
   transition: all .3s;
 }
 
-.text .summ a:after {
+.text .summ a.btn-green:after {
   position: absolute;
   left: 0;
   bottom: -34.5px;
@@ -757,11 +757,11 @@ body {
   transition: all .3s;
 }
 
-.text .summ a:hover {
+.text .summ a.btn-green:hover {
   background-color: #8eae29;
 }
 
-.text .summ a:hover:after {
+.text .summ a.btn-green:hover:after {
   border-color: #8eae29 transparent transparent transparent;
 }
 
@@ -816,9 +816,7 @@ body {
 
 .footer h4 {
   margin: 0 0 10px;
-  font-weight: normal;
-  font-size: 24px;
-  font-family: "Calibri Bold", sans-serif;
+  font: normal 24px "Calibri Bold", sans-serif;
   color: #fff;
 }
 
