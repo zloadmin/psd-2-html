@@ -115,7 +115,9 @@
     padding-right: 32px;
     padding-left: 7px;
 }
-
+.form-step .steps div.step:last-child {
+    background: none;
+}
 .form-steps .steps .step.curent {
     position: relative;
     z-index: 1;
@@ -543,4 +545,98 @@ background: linear-gradient(top, #8c1c6b, #d539a9);
     background: url("../images/skip_btn.png") no-repeat;
     margin-top: -10px;
     margin-left: 75px;
+}
+#sro-finish h4 {
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-left: 43px;
+    padding-top: 3px;
+}
+#sro-finish span.field {
+    margin-left: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-top: 15px;
+}
+#sro-finish table input {
+    margin-left: -26px;
+    border-radius: 20px;
+    width: 270px;
+    margin-top: 3px;
+}
+#sro-finish table button {
+    background-image: url("../images/btn_get.png");
+    background-repeat: no-repeat;
+    border: 0;
+    width: 287px;
+    height: 41px;
+    margin-left: -25px;
+    margin-top: -8px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+#sro-finish table button font {
+    display: block;
+    margin-top: -9px;
+}
+#sro-finish .form-step-bottom button {
+    margin-left: -76px;
+    margin-top: -37px;
+    float: left;
+}
+#req_field_text {
+    font-size: 14px;
+    margin-top: -1px;
+    float: right;
+    font-weight: normal;
+    margin-right: -10px;
+}
+#last-step {
+    width: 790px;
+    height: 432px;
+    margin-top: -65px;
+    margin-left: -23px;
+    background: #fff;
+    border-radius: 30px;
+    position: relative;
+    z-index: 99999;
+
+}
+#last-step p {
+    text-align: center;
+}
+#last-step .img {
+
+}
+#last-step .img img {
+    margin-top: 40px;
+}
+#last-step p.message {
+    text-transform: uppercase;
+    color: #31558f;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 7px;
+}
+#last-step .for_button {
+
+
+}
+#last-step .for_button button {
+    background-image: url("../images/close_btn_bg_second.png");
+    background-repeat: no-repeat;
+    width: 286px;
+    height: 40px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-top: 65px;
+}
+#last-step .for_button button span {
+    font-size: 28px;
+    display: block;
+    margin-top: 1px;
+    margin-left: -10px;
+
 }

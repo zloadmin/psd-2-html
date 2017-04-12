@@ -199,13 +199,13 @@
 	<div id="Popup">
 		<div class="section2" id="section2">
 		</div>
-		<div id="m_form" style="">
+		<div id="m_form">
 			<h3 id="main_head_calc">Расчёт стоимости допуска СРО</h3>
 			<div class="form-steps">
 				<form id="qw">
 
 					<!-- Шаг1 -->
-					<div class="form-step form-step-1" style="">
+					<div class="form-step form-step-1" style="display: block;">
 						<div class="steps steps_bar">
 							<div class="step activ start" style="margin-left: -5px;">Шаг 1</div>
 							<div class="step">Шаг 2</div>
@@ -2653,23 +2653,23 @@
 							<div class="step">Шаг 2</div>
 							<div class="step">Шаг 3</div>
 							<div class="step">Шаг 4</div>
-							<div class="step activ end">Шаг 5</div>
+							<div class="step activ end" style="background: none;">Шаг 5</div>
 							<div class="clear"></div>
 						</div>
 						<div class="clear"></div>
 						<h4>Ваш рассчет сформирован</h4>
-						<table width="100%" border="0" style="font-size:14px;">
+						<table width="745" border="0" style="font-size:14px;">
 							<tbody>
 							<tr>
-								<td>Контактное лицо:</td>
-								<td><input type="text" id="m_name" name="m_name"></td>
+								<td width="263"><span class="field">Контактное лицо:</span></td>
+								<td width="482"><input type="text" id="m_name" name="m_name"></td>
 							</tr>
 							<tr>
-								<td>Телефон:<font color="red">*</font></td>
+								<td><span class="field">Телефон:<font color="red">*</font></span></td>
 								<td><input type="text" id="m_tel" name="m_tel"></td>
 							</tr>
 							<tr>
-								<td>Ваш E-mail:</td>
+								<td><span class="field">Ваш E-mail:</span></td>
 								<td><input type="text" id="m_email" name="m_email"></td>
 								<input type="hidden" id="ref" name="referer">
 							</tr>
@@ -2688,12 +2688,41 @@
 								<button onclick="formSro('survey-sro')" style="width: 255px" value="Назад" class="button prev2  step first active button_next_prew">Назад<br>
 									<font class="size_two">(к началу)</font></button>
 							</div>
-							<div style="font-size: 12px; margin-top: 20px; float: right;"><font color="red">*</font>&nbsp;-&nbsp;поля обязательные для заполнения.</div>
+							<div id="req_field_text"><font color="red">*</font>&nbsp;-&nbsp;поля обязательные для заполнения.</div>
 							<div class="clear"></div>
 						</div>
 					</div>
 					<!-- Шаг 5 -->
-
+					<!-- Шаг 6 -->
+					<div style="display:none" id="last-step" class="form-step form-step-6">
+							<div class="error" style="display: none;">
+								<p class="img">
+									<img src="images/dislike.png" alt="">
+								</p>
+								<p class="message">
+									Произошла ошибка, попробуйте позже
+								</p>
+								<p class="for_button">
+									<button type="button"  onclick="$.fancybox.close( true ); return false;">
+										<span>Закрыть</span>
+									</button>
+								</p>
+							</div>
+							<div class="success" style="display: none;">
+								<p class="img">
+									<img src="images/like.png" alt="">
+								</p>
+								<p class="message">
+									Запрос отправлен , с вами свяжутся в ближайшее время
+								</p>
+								<p class="for_button">
+									<button type="button" onclick="$.fancybox.close( true ); return false;">
+										<span>Закрыть</span>
+									</button>
+								</p>
+							</div>
+					</div>
+					<!-- Шаг 6 -->
 				</form>
 			</div>
 		</div>
