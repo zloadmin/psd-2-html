@@ -27,7 +27,9 @@ $(document).ready(function () {
 
             if (e.clientY <= 5 || e.clientX <= 5) {
                 window.tick = true;
-                $('.fancy').trigger('click');
+                // $('.fancy').trigger('click');
+                showCallMeForm();
+                // console.log('showCallMeForm');
             }
         }
     });
@@ -55,5 +57,13 @@ $(document).ready(function () {
         }
 
     });
-
 });
+
+function showCallMeForm() {
+    var form = $("#callme_form");
+    $.fancybox(form , {
+        closeBtn: false,
+        width: 815,
+        height: 217
+    });
+}

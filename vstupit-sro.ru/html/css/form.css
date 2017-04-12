@@ -632,6 +632,10 @@ background: linear-gradient(top, #8c1c6b, #d539a9);
     color: #FFFFFF;
     text-transform: uppercase;
     margin-top: 65px;
+
+}
+#last-step .for_button button:hover {
+    cursor: pointer;
 }
 #last-step .for_button button span {
     font-size: 28px;
@@ -642,4 +646,63 @@ background: linear-gradient(top, #8c1c6b, #d539a9);
 }
 .form-steps .steps .step.end {
     background: none;
+}
+#callme_form {
+    /*position: absolute;*/
+    display: none;
+    border: 3px solid #9fc32e;
+    width: 803px;
+    height: 205px;
+    background-color: #31558f;
+    background-image: url("../images/callme_form_bg.png");
+    left: 0px;
+    top: 0px;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-position: 623px bottom;
+}
+#callme_form .head_one {
+    color: #fff;
+    text-align: center;
+    font-size: 29px;
+    font-family: Arial;
+    font-weight: bold;
+    margin-top: 5px;
+}
+#callme_form .your_phone {
+    color: #fff;
+    position: absolute;
+    left: 42px;
+    font-size: 19px;
+    font-family: Arial;
+    bottom: 78px;
+}
+#callme_form form input {
+    position: absolute;
+    border: 0;
+    height: 47px;
+    border-radius: 25px;
+    left: 18px;
+    bottom: 27px;
+    width: 318px;
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+#callme_form form button {
+    background-image: url("../images/call_btn_bg.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 370px;
+    bottom: 26px;
+    border: 0;
+    width: 185px;
+    height: 52px;
+    background-color: transparent;
+}
+#callme_form form button span {
+    text-transform: uppercase;
+    font-size: 23px;
+    font-family: Arial;
+    color: #fff;
 }
