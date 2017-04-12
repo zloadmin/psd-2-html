@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-span.h3 {
+span.h3, h1.special_header {
   position: relative;
   display: inline-block;
   margin: 0 auto;
@@ -30,7 +30,7 @@ span.h3 {
 
 }
 
-span.h3:before {
+span.h3:before, h1.special_header:before {
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -40,7 +40,7 @@ span.h3:before {
   background-color: #f1cb30;
 }
 
-span.h3:after {
+span.h3:after, h1.special_header:after {
   position: absolute;
   bottom: -18px;
   left: 0;
@@ -52,13 +52,13 @@ span.h3:after {
   background-color: #f1cb30;
 }
 
-span.h3 .line {
+span.h3 .line, h1.special_header .line {
   position: relative;
   display: block;
   width: 100%;
 }
 
-span.h3 .line:after {
+span.h3 .line:after, h1.special_header .line:after {
   position: absolute;
   bottom: -25px;
   left: 0;
