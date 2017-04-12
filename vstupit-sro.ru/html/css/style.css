@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-h3.h3 {
+span.h3 {
   position: relative;
   display: inline-block;
   margin: 0 auto;
@@ -27,9 +27,10 @@ h3.h3 {
   text-transform: uppercase;
   font: normal 45px/1 "Calibri Bold", sans-serif;
   color: #30558f;
+
 }
 
-h3.h3:before {
+span.h3:before {
   position: absolute;
   bottom: -10px;
   left: 0;
@@ -39,7 +40,7 @@ h3.h3:before {
   background-color: #f1cb30;
 }
 
-h3.h3:after {
+span.h3:after {
   position: absolute;
   bottom: -18px;
   left: 0;
@@ -51,13 +52,13 @@ h3.h3:after {
   background-color: #f1cb30;
 }
 
-h3.h3 .line {
+span.h3 .line {
   position: relative;
   display: block;
   width: 100%;
 }
 
-h3.h3 .line:after {
+span.h3 .line:after {
   position: absolute;
   bottom: -25px;
   left: 0;
@@ -133,12 +134,13 @@ body {
   width: 418px;
 }
 
-.header-title h2 {
+.header-title .old_h2 {
   margin: 0;
   text-align: center;
   text-transform: uppercase;
   font: normal 45px "Calibri Bold", sans-serif;
   color: #40679b;
+  display: inherit;
 }
 
 .header-info {
@@ -153,19 +155,19 @@ body {
   font: normal 15px "Calibri Bold", sans-serif;
 }
 
-.header-info h4 {
+.header-info .old_h4 {
   margin: 5px 0 0;
   font: normal 34px "Calibri Bold", sans-serif;
   color: #40679b;
 }
 
-.header-info h4 img {
+.header-info .old_h4 img {
   position: relative;
   top: 5px;
   right: 5px;
 }
 
-.header-info h5 {
+.header-info .old_h5 {
   margin: 0;
   font: normal 19px "Calibri Bold", sans-serif;
 }
@@ -865,10 +867,12 @@ body {
   width: 860px;
 }
 
-.footer h4 {
+.footer .old_h4 {
   margin: 0 0 10px;
   font: normal 24px "Calibri Bold", sans-serif;
   color: #fff;
+  display: inherit;
+
 }
 
 .footer p {
