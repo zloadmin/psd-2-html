@@ -194,6 +194,9 @@ $(document).on('change', 'input[type="checkbox"]', function () {
 });
 $(document).on('change', 'input[type="radio"]', function () {
     var tmp = $(this).attr('name');
+    // console.log(tmp);
+    // console.log($('input[name="' + tmp + '"]').parent());
+    // console.log($(this).parent());
     $('input[name="' + tmp + '"]').parent().removeClass("checked");
     $(this).parent().toggleClass("checked", this.selected);
 });

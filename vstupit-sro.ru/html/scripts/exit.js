@@ -38,11 +38,22 @@ $(document).ready(function () {
     });
     $('.sendform').click(function (e) {
         e.preventDefault();
+        var phone = $("#m_tel");
+        if(phone.val() == "") {
+            phone.css({"border" : "1px solid red"});
+        } else {
+            $('#result').html('<img src="images/loading.gif" alt="" />');
+            $.post('/sendmail.php', $('#qw').serialize()).success(function() {
+                $(".form-step").hide();
+                $("#last-step").show();
+                $("#last-step .success").show();
+            }).error(function() {
+                $(".form-step").hide();
+                $("#last-step").show();
+                $("#last-step .error").show();
+            });
+        }
 
-        $('#result').html('<img src="images/loading.gif" alt="" />');
-        $.post('/sendmail.php', $('#qw').serialize(), function (data) {
-            $('#m_form #result').html(data);
-        });
     });
 
 });

@@ -640,3 +640,6 @@ background: linear-gradient(top, #8c1c6b, #d539a9);
     margin-left: -10px;
 
 }
+.form-steps .steps .step.end {
+    background: none;
+}
